@@ -7,6 +7,7 @@
   let version = $state('');
   let totalDownloads = $state(0);
   let changelog: { version: string; date: string; body: string }[] = $state([]);
+  let openChangelog = $state(-1);
 
   onMount(async () => {
     try {
@@ -100,19 +101,27 @@
   </div>
 
   <!-- Changelog -->
-  <div class="space-y-4">
+  <div class="space-y-3">
     <h3 class="text-xl font-semibold text-[#f5f5f7]">{i18n.t.dspDetail.changelogTitle}</h3>
     {#if changelog.length === 0}
       <p class="text-[#86868b] text-sm">{i18n.t.dspDetail.changelogEmpty}</p>
     {:else}
-      {#each changelog as entry}
-        <div class="p-6 rounded-[24px] bg-white/[0.02] border border-white/[0.08] backdrop-blur-[60px]">
-          <div class="flex items-center justify-between mb-3">
-            <span class="text-indigo-400 font-semibold">{entry.version}</span>
-            <span class="text-[#86868b] text-xs">{entry.date}</span>
+      {#each changelog as entry, idx}
+        <button
+          onclick={() => openChangelog = openChangelog === idx ? -1 : idx}
+          class="w-full p-5 rounded-[24px] bg-white/[0.02] border border-white/[0.08] backdrop-blur-[60px] text-left hover:bg-white/[0.04] transition-all duration-300 block"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <span class="text-indigo-400 font-semibold">{entry.version}</span>
+              <span class="text-[#86868b] text-xs">{entry.date}</span>
+            </div>
+            <span class="text-[#86868b] text-lg transition-transform duration-300 shrink-0 {openChangelog === idx ? 'rotate-45' : ''}">+</span>
           </div>
-          <pre class="text-[#86868b] text-sm leading-relaxed whitespace-pre-wrap font-sans">{entry.body}</pre>
-        </div>
+          {#if openChangelog === idx}
+            <pre class="mt-4 text-[#86868b] text-sm leading-relaxed whitespace-pre-wrap font-sans border-t border-white/[0.06] pt-4">{entry.body}</pre>
+          {/if}
+        </button>
       {/each}
     {/if}
   </div>
