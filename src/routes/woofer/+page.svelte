@@ -111,11 +111,6 @@
     {/if}
   </div>
 
-  <!-- Download -->
-  <div class="flex flex-col items-center gap-3 pt-4">
-    <a href={downloadUrl} download class="px-10 py-4 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] tracking-wide hover:scale-105 active:scale-95 transition-transform flex items-center gap-2">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-
   <!-- Installation Guide -->
   <div class="space-y-4">
     <h3 class="text-xl font-semibold text-[#f5f5f7]">{i18n.t.guide.wooferTitle}</h3>
@@ -147,3 +142,4 @@
     {/if}
   </div>
 </section>
+
