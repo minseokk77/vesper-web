@@ -60,9 +60,9 @@ export const ko = {
     dspTitle: 'Vesper DSP 설치',
     wooferTitle: 'Vesper Woofer 설치',
     dspSteps: [
-      { step: '1', title: '설치 파일 다운로드', desc: '아래 DSP 페이지에서 최신 버전의 설치 파일(.exe)을 다운로드합니다.' },
-      { step: '2', title: '설치 프로그램 실행', desc: '다운로드된 VesperDSP_x.x.x_x64-setup.exe를 실행합니다. Windows Defender SmartScreen 경고가 표시되면 "추가 정보" → "실행"을 클릭하세요.' },
-      { step: '3', title: 'VB-Cable 자동 설치', desc: 'Vesper DSP가 필요한 가상 오디오 드라이버(VB-Cable)를 자동으로 설치합니다. 설치 중 UAC(관리자 권한) 승인이 필요합니다.' },
+      { step: '1', title: 'VB-Cable 설치 (필수)', desc: 'Vesper DSP 실행 전 반드시 VB-Audio Virtual Cable을 먼저 설치해야 합니다. https://vb-audio.com/Cable 에서 무료로 다운로드한 뒤, VBCABLE_Setup_x64.exe를 관리자 권한으로 실행하여 설치하세요.' },
+      { step: '2', title: 'DSP 설치 파일 다운로드', desc: '아래 DSP 페이지에서 최신 버전의 설치 파일(.exe)을 다운로드합니다.' },
+      { step: '3', title: '설치 프로그램 실행', desc: '다운로드된 VesperDSP_x.x.x_x64-setup.exe를 실행합니다. Windows Defender SmartScreen 경고가 표시되면 "추가 정보" → "실행"을 클릭하세요.' },
       { step: '4', title: '오디오 출력 장치 변경', desc: 'Windows 설정 → 소리 → 출력 장치를 "CABLE Input (VB-Audio Virtual Cable)"으로 변경합니다.' },
       { step: '5', title: '프로파일 적용', desc: 'Vesper DSP 앱에서 사용 중인 헤드폰/이어폰 모델을 검색하여 AutoEq 프로파일을 적용합니다. 완료!' }
     ],

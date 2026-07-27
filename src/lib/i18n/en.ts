@@ -60,9 +60,9 @@ export const en = {
     dspTitle: 'Vesper DSP Installation',
     wooferTitle: 'Vesper Woofer Installation',
     dspSteps: [
-      { step: '1', title: 'Download Installer', desc: 'Download the latest installer (.exe) from the DSP page below.' },
-      { step: '2', title: 'Run the Installer', desc: 'Run VesperDSP_x.x.x_x64-setup.exe. If Windows Defender SmartScreen appears, click "More info" → "Run anyway".' },
-      { step: '3', title: 'VB-Cable Auto-Install', desc: 'Vesper DSP automatically installs the required virtual audio driver (VB-Cable). Administrator (UAC) approval is required during installation.' },
+      { step: '1', title: 'Install VB-Cable (Required)', desc: 'VB-Audio Virtual Cable must be installed before running Vesper DSP. Download it for free at https://vb-audio.com/Cable, then run VBCABEL_Setup_x64.exe as Administrator.' },
+      { step: '2', title: 'Download the DSP Installer', desc: 'Download the latest installer (.exe) from the DSP page below.' },
+      { step: '3', title: 'Run the Installer', desc: 'Run VesperDSP_x.x.x_x64-setup.exe. If Windows Defender SmartScreen appears, click "More info" → "Run anyway".' },
       { step: '4', title: 'Change Audio Output Device', desc: 'Go to Windows Settings → Sound → Output and select "CABLE Input (VB-Audio Virtual Cable)".' },
       { step: '5', title: 'Apply a Profile', desc: 'In the Vesper DSP app, search for your headphone/earphone model and apply an AutoEq profile. Done!' }
     ],

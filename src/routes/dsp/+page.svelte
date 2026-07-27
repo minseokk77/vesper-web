@@ -91,7 +91,7 @@
   <div class="p-8 rounded-[32px] bg-white/[0.02] border border-white/[0.08] backdrop-blur-[60px]">
     <h3 class="text-xl font-semibold text-[#f5f5f7] mb-6">{i18n.t.dspDetail.sysReqTitle}</h3>
     <div class="flex flex-wrap gap-3">
-      {#each [['OS', 'Windows 10/11'], ['Architecture', 'x64 (64-bit)'], ['RAM', '4GB+'], ['Runtime', 'VB-Cable (Auto)'], ['Language', 'Rust']] as [label, value]}
+      {#each [['OS', 'Windows 10/11'], ['Architecture', 'x64 (64-bit)'], ['RAM', '4GB+'], ['Runtime', 'VB-Cable (별도 설치 필요)'], ['Language', 'Rust']] as [label, value]}
         <span class="px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.08] text-sm text-[#f5f5f7]">
           <span class="text-[#86868b]">{label}:</span> {value}
         </span>
