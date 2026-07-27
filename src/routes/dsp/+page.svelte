@@ -1,5 +1,24 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { i18n } from '$lib/i18n/index.svelte';
+
+  // GitHub 최신 릴리즈 에셋 URL을 동적으로 가져옵니다
+  let downloadUrl = $state('https://github.com/minseokk77/vesper-dsp/releases/latest');
+  let version = $state('');
+
+  onMount(async () => {
+    try {
+      const res = await fetch('https://api.github.com/repos/minseokk77/vesper-dsp/releases/latest');
+      const data = await res.json();
+      version = data.tag_name ?? '';
+      const asset = data.assets?.find((a: { name: string; browser_download_url: string }) =>
+        a.name.endsWith('.exe') && !a.name.endsWith('.sig')
+      );
+      if (asset) downloadUrl = asset.browser_download_url;
+    } catch {
+      // 실패 시 releases/latest 페이지로 폴백
+    }
+  });
 </script>
 
 <svelte:head>
@@ -31,9 +50,15 @@
   </div>
 
   <!-- Download -->
-  <div class="flex justify-center pt-10">
-    <a href="https://github.com/minseokk77/vesper-dsp/releases/latest" target="_blank" class="px-10 py-4 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] tracking-wide hover:scale-105 active:scale-95 transition-transform">
+  <div class="flex flex-col items-center gap-3 pt-10">
+    <a href={downloadUrl} download class="px-10 py-4 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] tracking-wide hover:scale-105 active:scale-95 transition-transform flex items-center gap-2">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+      </svg>
       {i18n.t.dspDetail.downloadBtn}
     </a>
+    {#if version}
+      <span class="text-xs text-[#86868b]">{version}</span>
+    {/if}
   </div>
 </section>
