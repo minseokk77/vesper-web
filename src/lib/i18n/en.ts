@@ -60,7 +60,7 @@ export const en = {
     dspTitle: 'Vesper DSP Installation',
     wooferTitle: 'Vesper Woofer Installation',
     dspSteps: [
-      { step: '1', title: 'Install VB-Cable (Required)', desc: 'VB-Audio Virtual Cable must be installed before running Vesper DSP. Download it for free at https://vb-audio.com/Cable, then run VBCABEL_Setup_x64.exe as Administrator.' },
+      { step: '1', title: 'Install VB-Cable HiFi (Required)', desc: 'VB-Audio Hi-Fi Cable must be installed before running Vesper DSP. Go to https://vb-audio.com/Cable/index.htm, download the "HiFi Cable" package, and run it as Administrator. (Supports up to 192kHz/24-bit, much better quality than the standard VB-Cable.)' },
       { step: '2', title: 'Download the DSP Installer', desc: 'Download the latest installer (.exe) from the DSP page below.' },
       { step: '3', title: 'Run the Installer', desc: 'Run VesperDSP_x.x.x_x64-setup.exe. If Windows Defender SmartScreen appears, click "More info" → "Run anyway".' },
       { step: '4', title: 'Change Audio Output Device', desc: 'Go to Windows Settings → Sound → Output and select "CABLE Input (VB-Audio Virtual Cable)".' },

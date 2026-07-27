@@ -60,7 +60,7 @@ export const ko = {
     dspTitle: 'Vesper DSP 설치',
     wooferTitle: 'Vesper Woofer 설치',
     dspSteps: [
-      { step: '1', title: 'VB-Cable 설치 (필수)', desc: 'Vesper DSP 실행 전 반드시 VB-Audio Virtual Cable을 먼저 설치해야 합니다. https://vb-audio.com/Cable 에서 무료로 다운로드한 뒤, VBCABLE_Setup_x64.exe를 관리자 권한으로 실행하여 설치하세요.' },
+      { step: '1', title: 'VB-Cable HiFi 설치 (필수)', desc: 'Vesper DSP 실행 전 반드시 VB-Audio Hi-Fi Cable을 먼저 설치해야 합니다. https://vb-audio.com/Cable/index.htm 에서 "HiFi Cable" 항목을 다운로드한 뒤, 관리자 권한으로 실행하여 설치하세요. (일반 VB-Cable보다 최대 192kHz/24bit 고품질 오디오를 지원합니다.)' },
       { step: '2', title: 'DSP 설치 파일 다운로드', desc: '아래 DSP 페이지에서 최신 버전의 설치 파일(.exe)을 다운로드합니다.' },
       { step: '3', title: '설치 프로그램 실행', desc: '다운로드된 VesperDSP_x.x.x_x64-setup.exe를 실행합니다. Windows Defender SmartScreen 경고가 표시되면 "추가 정보" → "실행"을 클릭하세요.' },
       { step: '4', title: '오디오 출력 장치 변경', desc: 'Windows 설정 → 소리 → 출력 장치를 "CABLE Input (VB-Audio Virtual Cable)"으로 변경합니다.' },
