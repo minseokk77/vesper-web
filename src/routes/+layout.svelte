@@ -29,7 +29,6 @@
     <div class="flex items-center gap-8 text-xs font-medium text-[#86868b] tracking-wide">
       <a href="{base}/dsp" class="hover:text-white transition-colors">{i18n.t.nav.dsp}</a>
       <a href="{base}/woofer" class="hover:text-white transition-colors">{i18n.t.nav.woofer}</a>
-      <a href="{base}/guide" class="hover:text-white transition-colors">{i18n.t.nav.guide}</a>
       <a href="https://github.com/minseokk77/vesper" target="_blank" class="hover:text-white transition-colors">{i18n.t.nav.github}</a>
       
       <!-- Language Toggle -->

@@ -117,6 +117,24 @@
     {/if}
   </div>
 
+  <!-- Installation Guide -->
+  <div class="space-y-4">
+    <h3 class="text-xl font-semibold text-[#f5f5f7]">{i18n.t.guide.dspTitle}</h3>
+    <div class="space-y-3">
+      {#each i18n.t.guide.dspSteps as step}
+        <div class="flex gap-5 p-6 rounded-[24px] bg-white/[0.02] border border-white/[0.08] backdrop-blur-[60px]">
+          <div class="w-8 h-8 rounded-full bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center shrink-0 text-indigo-400 font-bold text-sm">
+            {step.step}
+          </div>
+          <div>
+            <h4 class="text-[#f5f5f7] font-semibold mb-1 text-[15px]">{step.title}</h4>
+            <p class="text-[#86868b] leading-relaxed text-sm">{step.desc}</p>
+          </div>
+        </div>
+      {/each}
+    </div>
+  </div>
+
   <!-- Download -->
   <div class="flex flex-col items-center gap-3 pt-4">
     <a href={downloadUrl} download class="px-10 py-4 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] tracking-wide hover:scale-105 active:scale-95 transition-transform flex items-center gap-2">
@@ -126,7 +144,7 @@
       {i18n.t.dspDetail.downloadBtn}
     </a>
     {#if version}
-      <span class="text-xs text-[#86868b]">{version} · <a href="{base}/guide" class="underline hover:text-white transition-colors">{i18n.t.nav.guide}</a></span>
+      <span class="text-xs text-[#86868b]">{version}</span>
     {/if}
   </div>
 </section>
