@@ -2,6 +2,7 @@ export const en = {
   nav: {
     dsp: 'DSP',
     woofer: 'Woofer',
+    guide: 'Install Guide',
     github: 'GitHub'
   },
   hero: {
@@ -18,7 +19,14 @@ export const en = {
     dspFeatures: ['Virtual Audio Routing', 'AutoEQ & Spinorama Profiles', 'Real-time Resampling'],
     wooferTitle: 'Vesper Woofer',
     wooferDesc: 'The ultimate subwoofer and bass channel delay synchronization utility. Fix phase cancellation and achieve perfect low-end harmony in any room acoustic environment.',
-    wooferFeatures: ['Millisecond Precision Delay Sync', 'Custom Crossover & Cut-off Filters', 'Seamless DSP Integration']
+    wooferFeatures: ['Millisecond Precision Delay Sync', 'Custom Crossover & Cut-off Filters', 'Seamless DSP Integration'],
+    faqTitle: 'Frequently Asked Questions',
+    faq: [
+      { q: 'Is it free to use?', a: 'Yes, both Vesper DSP and Woofer are completely free for personal and non-commercial use.' },
+      { q: 'What Windows version is required?', a: 'Windows 10 (64-bit) or later is required. Optimized for Windows 11.' },
+      { q: 'Do I need to use DSP and Woofer together?', a: 'Each can be used independently. However, using them together provides a much more complete audio experience.' },
+      { q: 'Do I need a virtual audio cable after installation?', a: 'Vesper DSP automatically configures VB-Cable during setup. No separate installation is needed.' }
+    ]
   },
   dspDetail: {
     title: 'System-Wide Acoustic Correction',
@@ -27,16 +35,44 @@ export const en = {
     box1Desc: 'Apply one-click AutoEq profiles based on over 9,000 headphone/earphone frequency measurement databases, allowing you to experience flat reference sound that overcomes hardware limitations.',
     box2Title: 'Real-time Processing',
     box2Desc: 'Utilizing Rust\'s cpal and rubato libraries, it provides ultra-fast audio routing and high-quality asynchronous resampling bypassing the Windows kernel stack. Absolutely zero lip-sync issues.',
-    downloadBtn: 'Download DSP for Windows'
+    downloadBtn: 'Download DSP for Windows',
+    sysReqTitle: 'System Requirements',
+    changelogTitle: 'Latest Changes',
+    changelogEmpty: 'Loading changelog...',
+    totalDownloads: 'Total Downloads'
   },
   wooferDetail: {
     title: 'Perfect Bass Phase Alignment',
     intro: 'Vesper Woofer perfectly solves the chronic phase cancellation problems that occur in 2.1+ channel environments mixing main speakers and subwoofers entirely through software.',
     box1Title: 'Delay Synchronization',
-    box1Desc: 'Correct the time alignment (Time Alignment) of sound reaching the listener\'s ear between the main speaker and subwoofer down to the millisecond (ms) to maximize low-end impact.',
+    box1Desc: 'Correct the time alignment of sound reaching the listener\'s ear between the main speaker and subwoofer down to the millisecond (ms) to maximize low-end impact.',
     box2Title: 'Crossover Filtering',
     box2Desc: 'Through internal DSP Biquad filters, cleanly cut out the bandwidth the subwoofer will handle based on a specific frequency band (e.g., 80Hz) to suppress booming and create the tightest sub-bass.',
-    downloadBtn: 'Download Woofer for Windows'
+    downloadBtn: 'Download Woofer for Windows',
+    sysReqTitle: 'System Requirements',
+    changelogTitle: 'Latest Changes',
+    changelogEmpty: 'Loading changelog...',
+    totalDownloads: 'Total Downloads'
+  },
+  guide: {
+    title: 'Installation Guide',
+    subtitle: 'Follow the steps below and be up and running in under 5 minutes.',
+    dspTitle: 'Vesper DSP Installation',
+    wooferTitle: 'Vesper Woofer Installation',
+    dspSteps: [
+      { step: '1', title: 'Download Installer', desc: 'Download the latest installer (.exe) from the DSP page below.' },
+      { step: '2', title: 'Run the Installer', desc: 'Run VesperDSP_x.x.x_x64-setup.exe. If Windows Defender SmartScreen appears, click "More info" → "Run anyway".' },
+      { step: '3', title: 'VB-Cable Auto-Install', desc: 'Vesper DSP automatically installs the required virtual audio driver (VB-Cable). Administrator (UAC) approval is required during installation.' },
+      { step: '4', title: 'Change Audio Output Device', desc: 'Go to Windows Settings → Sound → Output and select "CABLE Input (VB-Audio Virtual Cable)".' },
+      { step: '5', title: 'Apply a Profile', desc: 'In the Vesper DSP app, search for your headphone/earphone model and apply an AutoEq profile. Done!' }
+    ],
+    wooferSteps: [
+      { step: '1', title: 'Download Installer', desc: 'Download the latest installer (.exe) from the Woofer page below.' },
+      { step: '2', title: 'Run the Installer', desc: 'Run VesperWoofer_x.x.x_x64-setup.exe. If SmartScreen appears, click "More info" → "Run anyway".' },
+      { step: '3', title: 'Configure Audio Devices', desc: 'After launching the app, select your main speaker and subwoofer output devices.' },
+      { step: '4', title: 'Set Delay Correction', desc: 'Enter the distance between your main speakers and subwoofer, or manually adjust the ms delay value.' },
+      { step: '5', title: 'Set Crossover', desc: 'Set the subwoofer\'s frequency crossover (typically 80Hz). That\'s it!' }
+    ]
   },
   footer: {
     copyright: '© 2026 minseokk77',
