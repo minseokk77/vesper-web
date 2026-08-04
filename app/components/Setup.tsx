@@ -17,9 +17,9 @@ export function Setup() {
           </a>
         </div>
         <div className="setup-steps">
-          {copy.setup.steps.map((step) => (
-            <div className="step" key={step.number}>
-              <span className="step-number">{step.number}</span>
+          {copy.setup.steps.map((step, index) => (
+            <div className="step" key={index}>
+              <span className="step-number">{('number' in step ? (step as { number?: string | number }).number : `0${index + 1}`) as string}</span>
               <div>
                 <strong>{step.title}</strong>
                 <p>{step.description}</p>

@@ -6,7 +6,7 @@ import { content, Language } from "../content";
 type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
-  copy: typeof content["ko"];
+  copy: typeof content["ko"] | typeof content["en"];
   toggleLanguage: () => void;
 };
 
