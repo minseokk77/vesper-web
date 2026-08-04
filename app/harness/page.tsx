@@ -132,7 +132,8 @@ export default function HarnessPage() {
         <div className="flex flex-col items-center gap-3 pt-4">
           <a
             href={downloadUrl}
-            className="px-10 py-4 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] tracking-wide hover:scale-105 active:scale-95 transition-transform flex items-center gap-2"
+            className="px-10 py-4 rounded-full bg-[#f5f5f7] font-semibold text-[15px] tracking-wide hover:scale-105 active:scale-95 transition-transform flex items-center gap-2"
+            style={{ color: '#000000' }}
           >
             Harness Github 열기
           </a>
