@@ -189,6 +189,15 @@ summary {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
 .dropdown-container:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
