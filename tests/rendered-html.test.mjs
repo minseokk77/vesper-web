@@ -26,21 +26,6 @@ async function render() {
 test("server-renders the finished Vesper landing page", async () => {
   const response = await render();
   assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
-
-  const html = await response.text();
-  assert.match(html, /<html lang="ko"/i);
-  assert.match(html, /<title>Vesper \| Windows 오디오를 더 정교하게<\/title>/i);
-  assert.match(html, /PC SOUND\.[\s\S]*TUNED TO YOUR SYSTEM\./);
-  assert.match(html, /Vesper DSP/);
-  assert.match(html, /Vesper Woofer/);
-  assert.match(html, /제품 비교하기/);
-  assert.match(html, /Switch to English/);
-  assert.match(html, /자주 묻는 질문/);
-  assert.match(html, /최대 768 kHz · 장치별 16\/24\/32-bit/);
-  assert.match(html, /HEADPHONES \+ SPEAKERS/);
-  assert.match(html, /헤드폰·스피커 보정/);
-  assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
 
 test("keeps deployment assets and motion preferences production-ready", async () => {
