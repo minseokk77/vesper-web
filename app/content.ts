@@ -16,7 +16,7 @@ export const content = {
       availability: "Windows 오디오 · 두 가지 정밀 도구",
       titleLineOne: "PC SOUND.",
       titleLineTwo: "TUNED TO YOUR SYSTEM.",
-      descriptionLineOne: "헤드폰·스피커 보정과 서브우퍼 타이밍을 더 정확하게.",
+      descriptionLineOne: "헤드폰·스피커 보정부터 자율 코딩 엔진까지.",
       descriptionLineTwo:
         "필요한 제품을 선택하면 실제 인터페이스와 핵심 기능을 바로 확인할 수 있습니다.",
       primaryAction: "제품 비교하기",
@@ -68,6 +68,17 @@ export const content = {
         ],
         action: "Woofer 다운로드",
       },
+      harness: {
+        category: "5-Stage 자율 코딩 파이프라인",
+        description:
+          "Aider, SWE-agent, Hermes 등 다중 AI 에이전트를 통합하여 컨텍스트 분석부터 검증까지 조율합니다.",
+        features: [
+          "5단계 자율 에이전트 파이프라인",
+          "동적 스킬 주입 및 자동 룰 맵핑",
+          "터미널 기반 몰입형 UI",
+        ],
+        action: "Harness 알아보기",
+      },
     },
     experience: {
       label: "ENGINEERED TO DISAPPEAR",
@@ -98,9 +109,9 @@ export const content = {
     },
     setup: {
       label: "READY IN MINUTES",
-      title: "필요한 앱을 고르고, 바로 들어보세요.",
+      title: "필요한 앱을 고르고, 바로 경험해 보세요.",
       description:
-        "헤드폰·이어폰·스피커 보정에는 DSP, 2.1채널 서브우퍼 정렬에는 Woofer를 선택하세요. DSP는 VB-Audio Hi-Fi Cable 설치가 필요합니다.",
+        "헤드폰·스피커 보정에는 DSP, 서브우퍼 정렬에는 Woofer, 자율 코딩 엔진은 Harness를 선택하세요. DSP는 VB-Audio Hi-Fi Cable 설치가 필요합니다.",
       action: "제품 선택하기",
       steps: [
         {
@@ -132,16 +143,16 @@ export const content = {
             "Windows 10 또는 Windows 11의 64비트 환경을 지원합니다. DSP는 VB-Audio Hi-Fi Cable 설치가 추가로 필요합니다.",
         },
         {
-          question: "DSP와 Woofer를 함께 설치해야 하나요?",
+          question: "DSP와 Woofer, Harness를 모두 사용해야 하나요?",
           answer:
-            "아닙니다. 헤드폰·이어폰·스피커 보정에는 DSP만, 2.1채널 시스템의 서브우퍼 정렬에는 Woofer만 사용할 수 있습니다.",
+            "아닙니다. 헤드폰·스피커 보정에는 DSP, 2.1채널 서브우퍼 정렬에는 Woofer를, AI 코딩 에이전트 구축에는 Harness를 개별적으로 선택하여 사용할 수 있습니다.",
         },
       ],
     },
     final: {
-      label: "YOUR SOUND, REFINED.",
+      label: "YOUR SOUND & WORKFLOW, REFINED.",
       title: "당신에게 필요한 Vesper를 선택하세요.",
-      action: "DSP와 Woofer 비교하기",
+      action: "Vesper 라인업 비교하기",
     },
     footer: "© 2026 minseokk77. 더 나은 청취를 위해 만들었습니다.",
   },
@@ -160,7 +171,7 @@ export const content = {
       availability: "Windows audio · two precision tools",
       titleLineOne: "PC SOUND.",
       titleLineTwo: "TUNED TO YOUR SYSTEM.",
-      descriptionLineOne: "Refine headphone, speaker, and subwoofer response.",
+      descriptionLineOne: "Refine audio response and empower your workflow.",
       descriptionLineTwo:
         "Choose a product to see its real interface and core capabilities.",
       primaryAction: "Compare products",
@@ -212,6 +223,17 @@ export const content = {
         ],
         action: "Download Woofer",
       },
+      harness: {
+        category: "5-Stage Autonomous Pipeline",
+        description:
+          "Integrates multiple AI agents like Aider, SWE-agent, and Hermes to orchestrate a perfect pipeline from analysis to verification.",
+        features: [
+          "5-Stage Autonomous Pipeline",
+          "Dynamic Skill & Auto-Rule Injection",
+          "Immersive Terminal UI",
+        ],
+        action: "Explore Harness",
+      },
     },
     experience: {
       label: "ENGINEERED TO DISAPPEAR",
@@ -242,9 +264,9 @@ export const content = {
     },
     setup: {
       label: "READY IN MINUTES",
-      title: "Choose what you need. Start listening.",
+      title: "Choose what you need. Start experiencing.",
       description:
-        "Pick DSP for headphone or speaker correction, or Woofer for subwoofer alignment in a 2.1 system. DSP requires VB-Audio Hi-Fi Cable.",
+        "Pick DSP for audio correction, Woofer for subwoofer alignment, or Harness for AI coding automation. DSP requires VB-Audio Hi-Fi Cable.",
       action: "Choose a product",
       steps: [
         {
@@ -276,16 +298,16 @@ export const content = {
             "Vesper supports 64-bit Windows 10 and Windows 11. DSP also requires VB-Audio Hi-Fi Cable.",
         },
         {
-          question: "Do I need to install both apps?",
+          question: "Do I need to install all apps?",
           answer:
-            "No. Use DSP for headphone, earphone, or speaker correction, and Woofer for subwoofer alignment in a 2.1 system.",
+            "No. Use DSP for audio correction, Woofer for subwoofer alignment, or Harness for an AI coding orchestrator independently.",
         },
       ],
     },
     final: {
-      label: "YOUR SOUND, REFINED.",
-      title: "Choose the Vesper app that fits your sound.",
-      action: "Compare DSP and Woofer",
+      label: "YOUR SOUND & WORKFLOW, REFINED.",
+      title: "Choose the Vesper app that fits your needs.",
+      action: "Compare Vesper Lineup",
     },
     footer: "© 2026 minseokk77. Built for better listening.",
   },
