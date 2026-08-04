@@ -2,7 +2,6 @@
 
 import { useLanguage } from "./LanguageProvider";
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 
 export function Hero() {
   const { language, copy } = useLanguage();
@@ -90,24 +89,24 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-          <Link 
+          <a 
             href="/dsp" 
-            className="px-8 py-3.5 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] hover:scale-105 active:scale-95 transition-transform duration-300 ease-out"
+            className="px-8 py-3.5 rounded-full bg-white/[0.08] text-white font-semibold text-[15px] hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all duration-300 ease-out border border-white/5"
           >
             {language === 'ko' ? 'DSP 살펴보기' : 'Explore DSP'}
-          </Link>
-          <Link 
+          </a>
+          <a 
             href="/woofer" 
             className="px-8 py-3.5 rounded-full bg-white/[0.08] text-white font-semibold text-[15px] hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all duration-300 ease-out border border-white/5"
           >
             {language === 'ko' ? 'Woofer 알아보기' : 'Discover Woofer'}
-          </Link>
-          <Link 
+          </a>
+          <a 
             href="/harness" 
             className="px-8 py-3.5 rounded-full bg-white/[0.08] text-white font-semibold text-[15px] hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all duration-300 ease-out border border-white/5"
           >
             {language === 'ko' ? 'Harness 확인하기' : 'View Harness'}
-          </Link>
+          </a>
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useLanguage } from "./LanguageProvider";
 
 function BrandMark() {
@@ -19,23 +18,23 @@ export function Navbar() {
   return (
     <header className="site-header">
       <nav className="nav-shell glass" aria-label={copy.navLabel}>
-        <Link className="brand" href="/" aria-label={copy.homeLabel}>
+        <a className="brand" href="/" aria-label={copy.homeLabel}>
           <BrandMark />
           Vesper
-        </Link>
+        </a>
         <div className="nav-links">
           <div className="dropdown-container">
             <span className="dropdown-trigger" style={{ cursor: 'pointer' }}>
               {copy.nav.products} <span aria-hidden="true" style={{ fontSize: '0.6em', opacity: 0.6 }}>▼</span>
             </span>
             <div className="dropdown-menu">
-              <Link href="/dsp">DSP</Link>
-              <Link href="/woofer">Woofer</Link>
-              <Link href="/harness" style={{ color: '#34d399' }}>Harness</Link>
+              <a href="/dsp">DSP</a>
+              <a href="/woofer">Woofer</a>
+              <a href="/harness" style={{ color: '#34d399' }}>Harness</a>
             </div>
           </div>
-          <Link href="/#experience">{copy.nav.features}</Link>
-          <Link href="/#faq">{copy.nav.faq}</Link>
+          <a href="/#experience">{copy.nav.features}</a>
+          <a href="/#faq">{copy.nav.faq}</a>
         </div>
         <button
           className="nav-language"
