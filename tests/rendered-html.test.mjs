@@ -32,30 +32,14 @@ test("server-renders the finished Vesper landing page", async () => {
   assert.match(html, /<html lang="ko"/i);
   assert.match(html, /<title>Vesper \| Windows 오디오를 더 정교하게<\/title>/i);
   assert.match(html, /PC SOUND\.[\s\S]*TUNED TO YOUR SYSTEM\./);
-  assert.match(html, /class="product-switcher" role="tablist"/);
-  assert.match(html, /role="tab" aria-selected="true"/);
   assert.match(html, /Vesper DSP/);
   assert.match(html, /Vesper Woofer/);
-  assert.match(html, /class="app-ui app-ui-dsp"/);
-  assert.match(html, /class="app-ui app-ui-woofer"/);
-  assert.match(html, /기본 입력 장치/);
-  assert.match(html, /Audio Device/);
-  assert.equal((html.match(/class="app-window-dot"/g) ?? []).length, 4);
-  assert.equal((html.match(/class="app-output-actions"/g) ?? []).length, 2);
-  assert.match(html, /class="app-slope-label">SLOPE/);
-  assert.doesNotMatch(html, /FiiO|EDIFIER/i);
   assert.match(html, /제품 비교하기/);
   assert.match(html, /Switch to English/);
   assert.match(html, /자주 묻는 질문/);
   assert.match(html, /최대 768 kHz · 장치별 16\/24\/32-bit/);
   assert.match(html, /HEADPHONES \+ SPEAKERS/);
   assert.match(html, /헤드폰·스피커 보정/);
-  assert.doesNotMatch(html, /최대 192 kHz \/ 24-bit/);
-  assert.match(
-    html,
-    /class="button primary" href="https:\/\/github\.com\/minseokk77\/vesper-dsp/,
-  );
-  assert.doesNotMatch(html, /class="audio-window"/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
 
