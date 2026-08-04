@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
@@ -38,7 +37,7 @@ export default function HarnessPage() {
           );
           setTotalDownloads(total);
 
-          const cl = releases.slice(0, 3).map((r: any) => ({
+          const cl = releases.slice(0, 3).map((r: { tag_name: string; published_at: string; body: string | null }) => ({
             version: r.tag_name,
             date: new Date(r.published_at).toLocaleDateString("ko-KR"),
             body: (r.body || "")
@@ -55,7 +54,7 @@ export default function HarnessPage() {
             body: "초기 파이프라인 개념 증명 완료.\nAider 및 SWE-agent 연동 기반 구축.\n몰입형 터미널 UI 목업 적용."
           }]);
         }
-      } catch (e) {
+      } catch {
         setChangelog([{
           version: "0.1.0-alpha",
           date: new Date().toLocaleDateString("ko-KR"),

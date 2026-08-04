@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
@@ -38,7 +37,7 @@ export default function WooferPage() {
           );
           setTotalDownloads(total);
 
-          const cl = releases.slice(0, 3).map((r: any) => ({
+          const cl = releases.slice(0, 3).map((r: { tag_name: string; published_at: string; body: string | null }) => ({
             version: r.tag_name,
             date: new Date(r.published_at).toLocaleDateString("ko-KR"),
             body: (r.body || "")
@@ -49,7 +48,7 @@ export default function WooferPage() {
           }));
           setChangelog(cl);
         }
-      } catch (e) {
+      } catch {
         // ignore
       }
     }
