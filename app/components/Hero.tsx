@@ -91,19 +91,19 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
           <a 
             href="/dsp" 
-            className="px-8 py-3.5 rounded-full bg-white/[0.08] text-white font-semibold text-[15px] hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all duration-300 ease-out border border-white/5"
+            className="px-8 py-3.5 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] hover:bg-white hover:scale-105 active:scale-95 transition-all duration-300 ease-out shadow-lg"
           >
             {language === 'ko' ? 'DSP 살펴보기' : 'Explore DSP'}
           </a>
           <a 
             href="/woofer" 
-            className="px-8 py-3.5 rounded-full bg-white/[0.08] text-white font-semibold text-[15px] hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all duration-300 ease-out border border-white/5"
+            className="px-8 py-3.5 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] hover:bg-white hover:scale-105 active:scale-95 transition-all duration-300 ease-out shadow-lg"
           >
             {language === 'ko' ? 'Woofer 알아보기' : 'Discover Woofer'}
           </a>
           <a 
             href="/harness" 
-            className="px-8 py-3.5 rounded-full bg-white/[0.08] text-white font-semibold text-[15px] hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all duration-300 ease-out border border-white/5"
+            className="px-8 py-3.5 rounded-full bg-[#f5f5f7] text-black font-semibold text-[15px] hover:bg-white hover:scale-105 active:scale-95 transition-all duration-300 ease-out shadow-lg"
           >
             {language === 'ko' ? 'Harness 확인하기' : 'View Harness'}
           </a>
