@@ -10,6 +10,13 @@ export default function HarnessPage() {
   const [totalDownloads, setTotalDownloads] = useState(0);
   const [changelog, setChangelog] = useState<{ version: string; date: string; body: string }[]>([]);
   const [openChangelog, setOpenChangelog] = useState(-1);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("pnpm add vesper-harness");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   useEffect(() => {
     async function fetchReleases() {
@@ -130,13 +137,27 @@ export default function HarnessPage() {
         </div>
 
         <div className="flex flex-col items-center gap-3 pt-4">
-          <a
-            href={downloadUrl}
-            className="px-10 py-4 rounded-full bg-[#f5f5f7] font-semibold text-[15px] tracking-wide hover:scale-105 active:scale-95 transition-transform flex items-center gap-2"
+          <button
+            onClick={handleCopy}
+            className="px-8 py-4 rounded-full bg-[#f5f5f7] font-mono font-semibold text-[15px] tracking-wide hover:scale-105 active:scale-95 transition-transform flex items-center gap-3"
             style={{ color: '#000000' }}
           >
-            Harness Github 열기
-          </a>
+            {copied ? (
+              <>
+                <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                복사 완료
+              </>
+            ) : (
+              <>
+                <svg className="w-5 h-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                pnpm add vesper-harness
+              </>
+            )}
+          </button>
           {version && <span className="text-xs text-[#86868b]">{version}</span>}
         </div>
       </main>
