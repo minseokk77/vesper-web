@@ -102,8 +102,35 @@ export default function HarnessPage() {
         </div>
 
         <div className="text-lg md:text-xl text-[#86868b] font-medium leading-relaxed text-center max-w-3xl mx-auto tracking-tight">
-          Aider, SWE-agent, Hermes 등 다중 에이전트를 조율합니다.
+          Sprocket, Aider, SWE-agent 등 다중 에이전트를 조율합니다.
           코드 컨텍스트를 파악하고 검증까지 완벽하게 자율 실행합니다.
+        </div>
+
+        <div className="space-y-6 pt-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-[#f5f5f7] mb-3">Sprocket 통합 에이전트</h2>
+            <p className="text-[#86868b]">하드웨어 설계와 코드 작성을 아우르는 경량 에이전트</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="p-6 rounded-[24px] bg-white/[0.02] border border-white/[0.08] backdrop-blur-[60px]">
+              <h3 className="text-lg font-semibold text-emerald-400 mb-2">하드웨어 & 소프트웨어 설계</h3>
+              <p className="text-[#86868b] text-[15px] leading-relaxed">
+                하드웨어 설계와 코드 작성을 같이 수행합니다. 회로도를 React로 직접 그리고, BOM(자재명세서)과 상세 조립 지침까지 자동으로 만들어냅니다.
+              </p>
+            </div>
+            <div className="p-6 rounded-[24px] bg-white/[0.02] border border-white/[0.08] backdrop-blur-[60px]">
+              <h3 className="text-lg font-semibold text-emerald-400 mb-2">지능형 컨텍스트 및 자율 구매</h3>
+              <p className="text-[#86868b] text-[15px] leading-relaxed">
+                모든 작업에서 웹의 최상급 컨텍스트를 끌어와 붙입니다. 지시하면 어떤 웹사이트에서든 부품이나 SaaS 구독을 스스로 알아서 구매합니다.
+              </p>
+            </div>
+            <div className="p-6 rounded-[24px] bg-white/[0.02] border border-white/[0.08] backdrop-blur-[60px] md:col-span-2">
+              <h3 className="text-lg font-semibold text-emerald-400 mb-2">어디서든 동일한 크로스 플랫폼</h3>
+              <p className="text-[#86868b] text-[15px] leading-relaxed">
+                복잡한 설치 과정 없이 <code className="bg-black/30 px-2 py-1 rounded text-emerald-300">npx spikonado/sprocket</code> 명령어 한 줄로 브라우저에서 바로 실행됩니다. 브라우저, CLI, 데스크톱 앱 어느 쪽을 쓰더라도 기능과 성능의 차이가 전혀 없습니다.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="space-y-3">
