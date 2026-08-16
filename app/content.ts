@@ -13,7 +13,7 @@ export const content = {
     switchLabel: "Switch to English",
     switchText: "EN",
     hero: {
-      availability: "Windows 오디오 · 두 가지 정밀 도구",
+      availability: "소프트웨어 에코시스템 · 오디오 & AI 도구",
       titleLineOne: "PC SOUND.",
       titleLineTwo: "TUNED TO YOUR SYSTEM.",
       descriptionLineOne: "헤드폰·스피커 보정부터 자율 코딩 엔진까지.",
@@ -40,9 +40,9 @@ export const content = {
       preamp: "프리앰프",
     },
     statement: {
-      label: "TWO APPS. ONE ECOSYSTEM.",
+      label: "THREE APPS. ONE ECOSYSTEM.",
       lineOne: "필요한 도구는 서로 달라도,",
-      lineTwo: "완성되는 소리는 하나입니다.",
+      lineTwo: "완성되는 경험은 하나입니다.",
       ariaLabel: "Vesper 소개",
     },
     products: {
@@ -168,7 +168,7 @@ export const content = {
     switchLabel: "한국어로 전환",
     switchText: "KO",
     hero: {
-      availability: "Windows audio · two precision tools",
+      availability: "Software Ecosystem · Audio & AI Tools",
       titleLineOne: "PC SOUND.",
       titleLineTwo: "TUNED TO YOUR SYSTEM.",
       descriptionLineOne: "Refine audio response and empower your workflow.",
@@ -195,9 +195,9 @@ export const content = {
       preamp: "Preamp",
     },
     statement: {
-      label: "TWO APPS. ONE ECOSYSTEM.",
+      label: "THREE APPS. ONE ECOSYSTEM.",
       lineOne: "Different tools for different needs.",
-      lineTwo: "One sound when they are done.",
+      lineTwo: "One unified experience when they are done.",
       ariaLabel: "About Vesper",
     },
     products: {

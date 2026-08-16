@@ -15,34 +15,34 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vesper.minseok.online"),
-  title: "Vesper | Windows 오디오를 더 정교하게",
+  title: "Vesper | 정밀 오디오부터 자율 AI 엔지니어링까지",
   description:
-    "시스템 전역 DSP와 서브우퍼 딜레이 동기화를 하나의 정교한 Windows 오디오 경험으로 만나보세요.",
+    "시스템 전역 음향 보정(DSP), 서브우퍼 타임 얼라인먼트(Woofer), 5-Stage 자율 AI 코딩 파이프라인(Harness)을 아우르는 차세대 소프트웨어 에코시스템.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "Vesper | Your sound, refined.",
+    title: "Vesper | Precision Audio & Autonomous AI Ecosystem",
     description:
-      "헤드폰·스피커 보정부터 서브우퍼 동기화까지. Windows 오디오를 더 정교하게.",
+      "시스템 전역 오디오 DSP부터 5-Stage 자율 AI 코딩 파이프라인까지. 고성능 소프트웨어 에코시스템 Vesper.",
     type: "website",
     locale: "ko_KR",
     siteName: "Vesper",
     images: [
       {
         url: "/og.png",
-        width: 1734,
-        height: 907,
-        alt: "Vesper 오디오 프로세싱 인터페이스",
+        width: 1280,
+        height: 720,
+        alt: "Vesper 소프트웨어 에코시스템 (오디오 DSP, AI 개발 파이프라인, 시스템 도구)",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vesper | Your sound, refined.",
+    title: "Vesper | Precision Audio & Autonomous AI Ecosystem",
     description:
-      "헤드폰·스피커 보정부터 서브우퍼 동기화까지. Windows 오디오를 더 정교하게.",
+      "시스템 전역 오디오 DSP부터 5-Stage 자율 AI 코딩 파이프라인까지. 고성능 소프트웨어 에코시스템 Vesper.",
     images: ["/og.png"],
   },
 };
