@@ -1,0 +1,9 @@
+# Vesper Software Ecosystem - Robots Exclusion Standard
+User-agent: *
+Allow: /
+Allow: /og.png
+Allow: /og.jpg
+Allow: /favicon.svg
+
+# Sitemap
+Sitemap: https://vesper.minseok.online/sitemap.xml
