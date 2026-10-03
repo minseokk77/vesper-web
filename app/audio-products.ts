@@ -1,9 +1,9 @@
 export const audioProducts = {
   dsp: {
-    version: "0.0.31",
+    version: "0.0.32",
     release: "https://github.com/minseokk77/vesper-dsp/releases/latest",
     download:
-      "https://github.com/minseokk77/vesper-dsp/releases/download/v0.0.31/VesperDSP_0.0.31_x64-setup.exe",
+      "https://github.com/minseokk77/vesper-dsp/releases/download/v0.0.32/VesperDSP_0.0.32_x64-setup.exe",
   },
   woofer: {
     version: "1.3.7",
