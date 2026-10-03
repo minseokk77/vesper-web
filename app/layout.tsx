@@ -15,35 +15,35 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vesper.minseok.online"),
-  title: "Vesper | 정밀 오디오부터 자율 AI 엔지니어링까지",
+  title: "Vesper | 음악을 듣는 당신에게.",
   description:
-    "시스템 전역 음향 보정(DSP), 서브우퍼 타임 얼라인먼트(Woofer), 5-Stage 자율 AI 코딩 파이프라인(Harness)을 아우르는 차세대 소프트웨어 에코시스템.",
+    "음색을 조절하는 Vesper DSP, 메인 출력과 서브우퍼를 연결하는 Vesper Woofer. Windows 오디오를 내 환경에 맞게 조율하세요.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "Vesper | Precision Audio & Autonomous AI Ecosystem",
+    title: "Vesper | Windows Audio, Under Your Control.",
     description:
-      "시스템 전역 오디오 DSP부터 5-Stage 자율 AI 코딩 파이프라인까지. 고성능 소프트웨어 에코시스템 Vesper.",
+      "EQ, 헤드룸, 리샘플링부터 서브우퍼 필터와 딜레이까지. 내 환경에 맞는 Windows 오디오 도구.",
     type: "website",
     locale: "ko_KR",
     siteName: "Vesper",
     images: [
       {
-        url: "/og.png",
-        width: 1280,
-        height: 720,
-        alt: "Vesper 소프트웨어 에코시스템 (오디오 DSP, AI 개발 파이프라인, 시스템 도구)",
+        url: "/audio-social.png",
+        width: 1200,
+        height: 630,
+        alt: "Vesper DSP와 Woofer 오디오 도구",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vesper | Precision Audio & Autonomous AI Ecosystem",
+    title: "Vesper | Windows Audio, Under Your Control.",
     description:
-      "시스템 전역 오디오 DSP부터 5-Stage 자율 AI 코딩 파이프라인까지. 고성능 소프트웨어 에코시스템 Vesper.",
-    images: ["/og.png"],
+      "EQ, 헤드룸, 리샘플링부터 서브우퍼 필터와 딜레이까지. 내 환경에 맞는 Windows 오디오 도구.",
+    images: ["/audio-social.png"],
   },
 };
 
@@ -57,9 +57,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LanguageProvider>
-          {children}
-        </LanguageProvider>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try { document.documentElement.dataset.audioTheme = localStorage.getItem("vesper-audio-theme") === "dark" ? "dark" : "light"; } catch { document.documentElement.dataset.audioTheme = "light"; }`,
+          }}
+        />
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

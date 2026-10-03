@@ -1,0 +1,821 @@
+[
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "drizzle-orm",
+    "version": "0.45.2",
+    "license": "Apache-2.0",
+    "url": "https://github.com/drizzle-team/drizzle-orm",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "next",
+    "version": "16.2.6",
+    "license": "MIT",
+    "url": "https://github.com/vercel/next.js",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "react",
+    "version": "19.2.6",
+    "license": "MIT",
+    "url": "https://github.com/facebook/react",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "react-dom",
+    "version": "19.2.6",
+    "license": "MIT",
+    "url": "https://github.com/facebook/react",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "@cloudflare/vite-plugin",
+    "version": "1.37.1",
+    "license": "MIT",
+    "url": "https://github.com/cloudflare/workers-sdk",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "@tailwindcss/postcss",
+    "version": "4.2.1",
+    "license": "MIT",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "22.19.19",
+    "license": "MIT",
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "@types/react",
+    "version": "19.2.14",
+    "license": "MIT",
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "@types/react-dom",
+    "version": "19.2.3",
+    "license": "MIT",
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "@vitejs/plugin-react",
+    "version": "6.0.2",
+    "license": "MIT",
+    "url": "https://github.com/vitejs/vite-plugin-react",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "@vitejs/plugin-rsc",
+    "version": "0.5.26",
+    "license": "MIT",
+    "url": "https://github.com/vitejs/vite-plugin-react",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "cross-env",
+    "version": "10.1.0",
+    "license": "MIT",
+    "url": "https://github.com/kentcdodds/cross-env",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "drizzle-kit",
+    "version": "0.31.10",
+    "license": "MIT",
+    "url": "https://github.com/drizzle-team/drizzle-orm",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "eslint",
+    "version": "9.39.4",
+    "license": "MIT",
+    "url": "https://github.com/eslint/eslint",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "eslint-config-next",
+    "version": "16.2.6",
+    "license": "MIT",
+    "url": "https://github.com/vercel/next.js",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "react-server-dom-webpack",
+    "version": "19.2.6",
+    "license": "MIT",
+    "url": "https://github.com/facebook/react",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "tailwindcss",
+    "version": "4.2.1",
+    "license": "MIT",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "5.9.3",
+    "license": "Apache-2.0",
+    "url": "https://github.com/microsoft/TypeScript",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "vinext",
+    "version": "0.0.50",
+    "license": "MIT",
+    "url": "https://github.com/cloudflare/vinext",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "vite",
+    "version": "8.0.13",
+    "license": "MIT",
+    "url": "https://github.com/vitejs/vite",
+    "kind": "development"
+  },
+  {
+    "scope": "Website",
+    "ecosystem": "npm",
+    "name": "wrangler",
+    "version": "4.92.0",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/cloudflare/workers-sdk",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/api",
+    "version": "2.11.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/tauri",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/plugin-autostart",
+    "version": "2.5.1",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/plugin-process",
+    "version": "2.3.1",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/plugin-updater",
+    "version": "2.10.1",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@sveltejs/adapter-static",
+    "version": "3.0.10",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/kit",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@sveltejs/kit",
+    "version": "2.70.1",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/kit",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@sveltejs/vite-plugin-svelte",
+    "version": "5.1.1",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/vite-plugin-svelte",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@tailwindcss/vite",
+    "version": "4.3.3",
+    "license": "MIT",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/cli",
+    "version": "2.11.4",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/tauri",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "26.1.2",
+    "license": "MIT",
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "autoprefixer",
+    "version": "10.5.4",
+    "license": "MIT",
+    "url": "https://github.com/postcss/autoprefixer",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "postcss",
+    "version": "8.5.24",
+    "license": "MIT",
+    "url": "https://github.com/postcss/postcss",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "svelte",
+    "version": "5.56.8",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/svelte",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "svelte-check",
+    "version": "4.7.4",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/language-tools",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "tailwindcss",
+    "version": "4.3.3",
+    "license": "MIT",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "5.6.3",
+    "license": "Apache-2.0",
+    "url": "https://github.com/microsoft/TypeScript",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "npm",
+    "name": "vite",
+    "version": "6.4.3",
+    "license": "MIT",
+    "url": "https://github.com/vitejs/vite",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/api",
+    "version": "2.11.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/tauri",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/plugin-autostart",
+    "version": "2.5.1",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/plugin-global-shortcut",
+    "version": "2.3.2",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/plugin-opener",
+    "version": "2.5.4",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/plugin-process",
+    "version": "2.3.1",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/plugin-updater",
+    "version": "2.10.1",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@sveltejs/adapter-static",
+    "version": "3.0.10",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/kit",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@sveltejs/kit",
+    "version": "2.70.1",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/kit",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@sveltejs/vite-plugin-svelte",
+    "version": "5.1.1",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/vite-plugin-svelte",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@tailwindcss/vite",
+    "version": "4.3.3",
+    "license": "MIT",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@tauri-apps/cli",
+    "version": "2.11.4",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/tauri",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "26.1.2",
+    "license": "MIT",
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "autoprefixer",
+    "version": "10.5.4",
+    "license": "MIT",
+    "url": "https://github.com/postcss/autoprefixer",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "postcss",
+    "version": "8.5.22",
+    "license": "MIT",
+    "url": "https://github.com/postcss/postcss",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "svelte",
+    "version": "5.56.7",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/svelte",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "svelte-check",
+    "version": "4.7.3",
+    "license": "MIT",
+    "url": "https://github.com/sveltejs/language-tools",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "tailwindcss",
+    "version": "4.3.3",
+    "license": "MIT",
+    "url": "https://github.com/tailwindlabs/tailwindcss",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "5.6.3",
+    "license": "Apache-2.0",
+    "url": "https://github.com/microsoft/TypeScript",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "npm",
+    "name": "vite",
+    "version": "6.4.3",
+    "license": "MIT",
+    "url": "https://github.com/vitejs/vite",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "biquad",
+    "version": "0.6.0",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/korken89/biquad-rs",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "cpal",
+    "version": "0.18.1",
+    "license": "Apache-2.0",
+    "url": "https://github.com/RustAudio/cpal",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "image",
+    "version": "0.24.9",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/image-rs/image",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "once_cell",
+    "version": "1.21.4",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/matklad/once_cell",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "ringbuf",
+    "version": "0.5.1",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/agerasev/ringbuf",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "rubato",
+    "version": "0.14.1",
+    "license": "MIT",
+    "url": "https://github.com/HEnquist/rubato",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "serde",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/serde-rs/serde",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "serde_json",
+    "version": "1.0.151",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/serde-rs/json",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "tauri",
+    "version": "2.11.5",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/tauri",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "tauri-build",
+    "version": "2.6.3",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/tauri",
+    "kind": "development"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-autostart",
+    "version": "2.5.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-global-shortcut",
+    "version": "2.3.2",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-process",
+    "version": "2.3.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-single-instance",
+    "version": "2.4.3",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-updater",
+    "version": "2.10.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "DSP",
+    "ecosystem": "cargo",
+    "name": "windows",
+    "version": "0.62.2",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/microsoft/windows-rs",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "biquad",
+    "version": "0.6.0",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/korken89/biquad-rs",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "cpal",
+    "version": "0.18.1",
+    "license": "Apache-2.0",
+    "url": "https://github.com/RustAudio/cpal",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "image",
+    "version": "0.24.9",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/image-rs/image",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "lazy_static",
+    "version": "1.5.0",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/rust-lang-nursery/lazy-static.rs",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "once_cell",
+    "version": "1.21.4",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/matklad/once_cell",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "ringbuf",
+    "version": "0.5.1",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/agerasev/ringbuf",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "rubato",
+    "version": "0.14.1",
+    "license": "MIT",
+    "url": "https://github.com/HEnquist/rubato",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "serde",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/serde-rs/serde",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "serde_json",
+    "version": "1.0.151",
+    "license": "MIT OR Apache-2.0",
+    "url": "https://github.com/serde-rs/json",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri",
+    "version": "2.11.5",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/tauri",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri-build",
+    "version": "2.6.3",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/tauri",
+    "kind": "development"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-autostart",
+    "version": "2.5.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-global-shortcut",
+    "version": "2.3.2",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-opener",
+    "version": "2.5.4",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-positioner",
+    "version": "2.3.3",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-process",
+    "version": "2.3.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-updater",
+    "version": "2.10.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  },
+  {
+    "scope": "Woofer",
+    "ecosystem": "cargo",
+    "name": "tauri-plugin-window-state",
+    "version": "2.4.1",
+    "license": "Apache-2.0 OR MIT",
+    "url": "https://github.com/tauri-apps/plugins-workspace",
+    "kind": "runtime"
+  }
+]

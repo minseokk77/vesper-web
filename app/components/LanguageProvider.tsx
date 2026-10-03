@@ -17,6 +17,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.lang = language;
+    if (!window.location.pathname.startsWith("/harness")) return;
     document.title =
       language === "ko"
         ? "Vesper | Windows 오디오를 더 정교하게"
