@@ -1,15 +1,15 @@
 .site {
-  --paper: #f2f0e9;
+  --paper: #e5e2d9;
   --text: #242621;
   --subtle: #656760;
-  --rule: #cfcec5;
+  --rule: #c4c1b7;
   --accent: #e8570e;
   --accent-ink: #be4000;
   --action-text: #24180e;
   --panel: #242824;
-  --surface: #f8f6ef;
-  --figure: #e7e8df;
-  --detail: #e8e8df;
+  --surface: #eeebe3;
+  --figure: #dbddd3;
+  --detail: #dcddd3;
   --action: #f56724;
   --action-hover: #ff7a32;
   min-height: 100vh;
