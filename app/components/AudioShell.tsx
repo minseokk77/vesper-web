@@ -73,6 +73,7 @@ export function AudioHeader({
           >
             DSP
           </Link>
+          <Link href="/eq" aria-current={product === "EQ" ? "page" : undefined}>EQ</Link>
           <Link
             href="/woofer"
             aria-current={product === "Woofer" ? "page" : undefined}
@@ -97,6 +98,7 @@ export function AudioFooter() {
         <Link href="/dsp">
           DSP <Arrow diagonal />
         </Link>
+        <Link href="/eq">EQ <Arrow diagonal /></Link>
         <Link href="/woofer">
           Woofer <Arrow diagonal />
         </Link>

@@ -1432,7 +1432,8 @@
   padding: 60px 0 40px;
 }
 .collectionDisc {
-  width: 52%;
+  width: 38%;
+  flex-shrink: 0;
   aspect-ratio: 1;
   border: 1px solid #747c6c;
   border-radius: 50%;
@@ -1454,8 +1455,8 @@
 .collectionDisc > span {
   font-family: Georgia, serif;
   font-style: italic;
-  font-size: 72px;
-  letter-spacing: -6px;
+  font-size: 48px;
+  letter-spacing: -3px;
 }
 .collectionDisc small {
   margin-top: 10px;
@@ -1465,6 +1466,8 @@
 }
 .collectionLegend {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-between;
   font-size: 10px;
   color: #bdc5b5;
@@ -2002,7 +2005,7 @@
     padding: 45px 0;
   }
   .collectionDisc > span {
-    font-size: 58px;
+    font-size: 38px;
   }
   .collectionDisc + .collectionDisc {
     margin-left: -25px;

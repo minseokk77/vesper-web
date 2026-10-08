@@ -1,10 +1,11 @@
 # Vesper Web
 
-Vesper DSP와 Vesper Woofer를 소개하고 배포하는 공식 웹사이트입니다.
+Vesper DSP, EQ와 Woofer를 소개하고 배포하는 공식 웹사이트입니다.
 
 ## 제품
 
 - **Vesper DSP**: Windows 전체 오디오를 헤드폰, 이어폰, 스피커에 맞게 보정
+- **Vesper EQ**: 독립 파라메트릭 EQ 클라이언트 및 DSP 연동
 - **Vesper Woofer**: 메인 출력 딜레이와 서브우퍼 로우패스 필터 조절
 
 ## 기술 구성
@@ -36,6 +37,7 @@ npm run lint
 
 - `/`: DSP와 Woofer를 비교해 선택하는 제품 소개
 - `/dsp`: 신호 경로, EQ, 헤드룸과 연결 방식
+- `/eq`: 사용자 EQ 조절과 DSP 연동, Windows 설치 파일
 - `/woofer`: 두 출력 분기, 저음 필터, 메인 출력 딜레이
 - `/harness`: 기존 페이지 보존 (이번 오디오 개편 대상에서 제외)
 

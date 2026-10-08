@@ -6,7 +6,7 @@ import styles from "./components/audio.module.css";
 export const metadata: Metadata = {
   title: "Vesper | 음악을 듣는 당신에게.",
   description:
-    "음색을 조절하는 Vesper DSP, 메인 출력과 서브우퍼를 연결하는 Vesper Woofer. 내 환경에 맞게 Windows 오디오를 조율하세요.",
+    "음색을 조절하는 Vesper DSP, 직접 밴드를 조절하는 Vesper EQ, 메인 출력과 서브우퍼를 연결하는 Vesper Woofer. 내 환경에 맞게 Windows 오디오를 조율하세요.",
   alternates: { canonical: "/" },
 };
 
@@ -35,13 +35,13 @@ export default function Home() {
               <p className={styles.intro}>
                 책상 위의 헤드폰부터 방 안의 서브우퍼까지.
                 <br />
-                음색과 연결, 두 가지를 조율하는
+                음색과 연결을 직접 조율하는
                 <br />
                 Windows 오디오 도구, Vesper.
               </p>
               <div className={styles.heroActions}>
                 <a href="#products" className={styles.download}>
-                  두 가지 도구 살펴보기 <Arrow />
+                  세 가지 도구 살펴보기 <Arrow />
                 </a>
                 <a href="#approach" className={styles.textLink}>
                   어떻게 다른가요? ↓
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
             <figure
               className={`${styles.plate} ${styles.collectionPlate}`}
-              aria-label="DSP는 음색을, Woofer는 출력 연결을 조절하는 개념도"
+              aria-label="DSP는 신호 경로를, EQ는 음색을, Woofer는 출력 연결을 조절하는 개념도"
             >
               <div className={styles.plateHead}>
                 <span>VESPER / THE AUDIO COLLECTION</span>
@@ -65,13 +65,18 @@ export default function Home() {
                   <small>TONE & SIGNAL</small>
                 </div>
                 <div className={styles.collectionDisc}>
+                  <span>EQ</span>
+                  <small>YOUR CURVE</small>
+                </div>
+                <div className={styles.collectionDisc}>
                   <span>W</span>
                   <small>BASS & TIMING</small>
                 </div>
               </div>
               <div className={styles.collectionLegend}>
                 <span>01 / 음색과 신호 경로</span>
-                <span>02 / 저음과 출력 타이밍</span>
+                <span>02 / 직접 그리는 음색</span>
+                <span>03 / 저음과 출력 타이밍</span>
               </div>
               <figcaption>
                 같은 음악. 서로 다른 조절.
@@ -94,7 +99,9 @@ export default function Home() {
                 골라서 시작하세요.
               </h2>
               <p>
-                음색을 바꾸고 싶다면 DSP.
+                신호 경로를 조절하려면 DSP.
+                <br />
+                음색을 직접 다듬으려면 EQ.
                 <br />
                 메인 출력에 서브우퍼를 더한다면 Woofer.
               </p>
@@ -128,8 +135,9 @@ export default function Home() {
                 살펴보기 <Arrow diagonal />
               </span>
             </Link>
+            <Link href="/eq" className={styles.productRow}><div className={styles.productNumber}>02</div><div><span className={styles.eyebrow}>YOUR CURVE. YOUR CALL.</span><h3>Vesper <em>EQ</em></h3><p>가로로 넓은 파라메트릭 EQ.<br/>AutoEQ와 별도로, 내가 원하는 음색을 더하세요.</p><span className={styles.productTags}>FREQUENCY / GAIN / Q / DSP LINK</span></div><div className={styles.miniDiagram} aria-hidden="true"><span>Hz</span><i/><span>dB</span><i/><span>Q</span></div><span className={styles.productOpen}>살펴보기 <Arrow diagonal/></span></Link>
             <Link href="/woofer" className={styles.productRow}>
-              <div className={styles.productNumber}>02</div>
+              <div className={styles.productNumber}>03</div>
               <div>
                 <span className={styles.eyebrow}>BASS & TIMING</span>
                 <h3>

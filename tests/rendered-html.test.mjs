@@ -48,6 +48,7 @@ test("audio routes expose their own instructions and verified installers", async
     ["/", "좋아하는 음악을", null],
     ["/open-source", "Libraries &amp; Tools", null],
     ["/dsp", "소리의 경로를", "VesperDSP_0.0.32_x64-setup.exe"],
+    ["/eq", "작은 조절이", "VesperEQ_0.1.0_x64-setup.exe"],
     ["/woofer", "저음도", "Vesper.Woofer_1.3.7_x64-setup.exe"],
   ]) {
     const response = await render(path);
