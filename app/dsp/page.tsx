@@ -5,7 +5,7 @@ import Experience from "./experience";
 export const metadata: Metadata = {
   title: "Vesper DSP | 소리의 경로를, 내 손으로.",
   description:
-    "Windows 오디오를 위한 Vesper DSP. EQ, 헤드룸, 리샘플링과 Signal Path로 내 장치에 맞는 소리의 경로를 설정하세요.",
+    "음악과 게임을 위한 Vesper DSP. Hi-Fi 직결과 게이밍 모드에서 EQ, 헤드룸과 Signal Path로 내 장치에 맞는 소리를 설정하세요.",
   alternates: { canonical: "/dsp" },
   openGraph: {
     title: "Vesper DSP | 소리의 경로를, 내 손으로.",

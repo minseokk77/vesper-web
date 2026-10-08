@@ -131,6 +131,7 @@ export default function Experience({ version }: { version: string }) {
         links={[
           ["#signal", "Signal Path"],
           ["#controls", "Sound Controls"],
+          ["#gaming", "Gaming Mode"],
           ["#start", "Getting Started"],
         ]}
       />
@@ -144,7 +145,7 @@ export default function Experience({ version }: { version: string }) {
           </div>
           <div className={styles.heroGrid}>
             <div className={styles.heroCopy}>
-              <p className={styles.eyebrow}>음악을 듣는 당신에게.</p>
+              <p className={styles.eyebrow}>음악을 듣고, 게임을 즐기는 당신에게.</p>
               <h1>
                 소리의 경로를,
                 <br />내 손으로.
@@ -177,7 +178,7 @@ export default function Experience({ version }: { version: string }) {
           <div className={styles.heroBottom}>
             <span>음색을 조절하고. 출력 형식을 선택하고. 경로를 확인하고.</span>
             <span>
-              01 — 04 <span aria-hidden="true">↓</span>
+              01 — 05 <span aria-hidden="true">↓</span>
             </span>
           </div>
         </section>
@@ -372,19 +373,19 @@ export default function Experience({ version }: { version: string }) {
                 aria-pressed={mode === "cable"}
                 onClick={() => setMode("cable")}
               >
-                가상 케이블 DSP
+                게이밍 모드
               </button>
               <button
                 type="button"
                 aria-pressed={mode === "direct"}
                 onClick={() => setMode("direct")}
               >
-                Direct DAC
+                Hi-Fi 직결
               </button>
             </div>
             <div className={styles.routeTrack}>
               {(mode === "cable"
-                ? ["재생 앱", "가상 케이블", "Vesper DSP", "DAC / 스피커"]
+                ? ["게임 / 재생 앱", "가상 케이블", "Vesper DSP", "DAC / 스피커"]
                 : ["재생 앱", "Windows 장치 처리", "DAC / 스피커"]
               ).map((item, i) => (
                 <div key={item}>
@@ -397,30 +398,75 @@ export default function Experience({ version }: { version: string }) {
             <div className={styles.routeDescription} aria-live="polite">
               <h3>
                 {mode === "cable"
-                  ? "앱의 소리를 DSP로 전달하세요."
+                  ? "게임 소리를 DSP로 전달하세요."
                   : "출력 장치의 처리 경로를 사용하세요."}
               </h3>
               <p>
                 {mode === "cable"
-                  ? "재생 앱의 출력을 가상 케이블로, Vesper의 입력을 해당 케이블로 선택합니다. Vesper의 출력은 실제 DAC나 스피커로 연결하세요."
-                  : "Direct DAC는 장치의 APO 설치와 활성화 상태에 따라 사용 가능합니다. 장치 환경에서 정상 동작을 확인한 뒤 사용하세요."}
+                  ? "게임의 출력 장치를 가상 케이블로, Vesper의 입력을 같은 케이블로 선택하세요. EQ와 헤드룸을 거친 소리는 Vesper에서 선택한 실제 DAC나 헤드폰으로 전달됩니다."
+                  : "Hi-Fi 직결은 가상 케이블 없이 출력 장치의 APO에서 DSP를 적용합니다. 장치의 APO 설치와 활성화 상태를 확인하고, 실제 처리 여부는 Signal Path에서 확인하세요."}
               </p>
             </div>
             <p className={styles.routeNote}>
-              가상 케이블은 별도로 설치해야 합니다. 출력 지원 형식은 장치와
-              Windows 오디오 설정에 따라 다릅니다.
+              {mode === "cable"
+                ? "가상 케이블은 별도로 설치해야 합니다. 출력 샘플레이트와 리샘플링 필터는 게이밍 모드에서 설정할 수 있습니다."
+                : "직결 모드의 출력 샘플레이트는 Windows 장치 설정을 따릅니다. 장치에서 APO가 정상 활성화되어야 합니다."}
             </p>
           </div>
         </section>
 
+        <section id="gaming" className={styles.section}>
+          <div className={styles.sectionHeading}>
+            <p className={styles.eyebrow}>04 / GAMING MODE</p>
+            <div>
+              <h2>
+                게임 소리도,
+                <br />내 장치에 맞게.
+              </h2>
+              <p>
+                게임의 소리를 가상 케이블로 받아 조절합니다.
+                <br />헤드폰의 음색과 듣기 편한 균형을 찾아보세요.
+              </p>
+            </div>
+          </div>
+          <ol className={styles.setupSteps} aria-label="게이밍 모드 설정 순서">
+            <li>
+              <span>01</span>
+              <h3>게임 출력을 연결하세요.</h3>
+              <p>
+                VB-Cable 또는 Hi-Fi Cable을 설치하고, 게임의 오디오 출력 장치를
+                가상 케이블로 선택하세요. 게임에 장치 선택이 없다면 Windows
+                볼륨 믹서에서 해당 앱의 출력을 설정하세요.
+              </p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>게이밍 모드를 켜세요.</h3>
+              <p>
+                Vesper의 입력은 같은 가상 케이블로, 출력은 실제 DAC나 헤드폰으로
+                선택하세요. ENGAGE DSP를 누르면 연결한 게임 소리의 처리가 시작됩니다.
+              </p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>소리의 균형을 맞추세요.</h3>
+              <p>
+                내 헤드폰의 Auto EQ 프로필과 헤드룸을 설정하세요. EQ로 커진
+                신호는 클리핑 감지로 확인하고, 입력부터 출력까지의 처리 상태는
+                Signal Path에서 살펴보세요.
+              </p>
+            </li>
+          </ol>
+        </section>
+
         <section id="start" className={`${styles.section} ${styles.start}`}>
           <div className={styles.sectionHeading}>
-            <p className={styles.eyebrow}>04 / A QUIETER DESKTOP</p>
+            <p className={styles.eyebrow}>05 / A QUIETER DESKTOP</p>
             <div>
               <h2>
                 설정은 한 번.
                 <br />
-                그다음은 음악에 집중.
+                그다음은 소리에 집중.
               </h2>
               <p>
                 Windows 시작 시 창을 띄우지 않고 실행합니다.
